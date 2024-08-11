@@ -14,7 +14,7 @@ const ReceiverPost = () => {
   const [receiverData, setreceiverData] = useState([]);
   const navigate = useNavigate();
 
-  const socket = io("http://localhost:3000");
+  const socket = io("https://dorm-drop-backend.vercel.app/");
 
   //         https://dormdrop.onrender.com
 

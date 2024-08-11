@@ -32,7 +32,7 @@ const ReceiverEnd1 = () => {
           console.log(`f is ${f}`);
           console.log(currentUser.username);
 
-          const socket = io.connect("http://localhost:3000");
+          const socket = io.connect("https://dorm-drop-backend.vercel.app/");
           //https://dormdrop.onrender.com
 
           socket.on("connect", () => {

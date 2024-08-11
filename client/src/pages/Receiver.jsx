@@ -18,7 +18,7 @@ const Receiver = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const socket = io("http://localhost:3000");
+    const socket = io("https://dorm-drop-backend.vercel.app/");
 
     //  https://dormdrop.onrender.com
     socket.on("connect", () => {

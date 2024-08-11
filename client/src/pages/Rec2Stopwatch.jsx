@@ -15,7 +15,7 @@ const Rec2Stopwatch = () => {
   const c = 0.2;
   const [countdown, setCountdown] = useState(c);
 
-  const socket = io.connect("http://localhost:3000");
+  const socket = io.connect("https://dorm-drop-backend.vercel.app/");
 
   useEffect(() => {
     socket.on("connect", () => {
