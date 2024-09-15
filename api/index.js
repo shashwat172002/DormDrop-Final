@@ -28,7 +28,6 @@ const app = express();
 
 const server =createServer(app);
 
-
 const io = new Server(server, {
   cors: {
     origin: "https://dormdrop.vercel.app/",     //http://localhost:5173  //https://dormdrop.onrender.com
