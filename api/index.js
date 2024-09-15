@@ -30,7 +30,7 @@ const server =createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://dorm-drop-backend.vercel.app/",     //http://localhost:5173  //https://dormdrop.onrender.com
+    origin: "https://dormdrop.vercel.app/",     //http://localhost:5173  //https://dormdrop.onrender.com
     methods:["GET","POST"],
     credentials:true,
   },
