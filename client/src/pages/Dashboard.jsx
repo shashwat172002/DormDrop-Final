@@ -31,8 +31,15 @@ export default function Dashboard() {
       }
     };
  
-    fetchRating();
-  }, []);
+    const interval = setInterval(() => {
+      if (!rating) {
+        fetchRating();
+      }
+    }, 2000);
+
+    // Clear the interval when the component unmounts or when currentUser changes
+    return () => clearInterval(interval);
+  }, [rating]);
  
   useEffect(() => {
     const timer = setTimeout(() => {
